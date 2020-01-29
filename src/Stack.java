@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.List;
 
 public class Stack<I extends Number> {
@@ -6,6 +7,8 @@ public class Stack<I extends Number> {
         java.util.Stack<String> b = new java.util.Stack<String>();
 
         String input = "(abc(*def)";
+        List<String> opening = Arrays.asList("{", "(", "[","<");
+        List<String> closing = Arrays.asList("}", ")", "]",">");
 
 
         char[] stringToCharArray = input.toCharArray();
@@ -13,7 +16,13 @@ public class Stack<I extends Number> {
             b.push(String.valueOf(output));
         }
         while(!b.isEmpty()) {
-            if(b.pop().contains())
+            if(closing.contains(b.peek())) {
+
+
+
+
+
+            }
 
         }
 
